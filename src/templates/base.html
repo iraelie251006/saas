@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block head_title %}SaaS{% endblock head_title %}</title>
+    </head>
+    <body>
+        <p>Hello Django I'm coming dude 😘</p>
+        {% block content %}
+        <p>Hello form Base</p>
+        {% endblock content %}
+        <p>Welcome {% if request.user.is_authenticated == False %}Guest{% endif %}</p>
+    </body>
+</html>
